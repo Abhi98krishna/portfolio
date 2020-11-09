@@ -4,7 +4,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="./style.css">
-		 <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&family=Inconsolata&family=Roboto+Slab:wght@200;300;400;500;600&display=swap" rel="stylesheet"> 
+		<!-- <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&family=Inconsolata&family=Roboto+Slab:wght@200;300;400;500;600&display=swap" rel="stylesheet"> -->
+
 
 	</head>
 
@@ -55,12 +56,12 @@
 			</div></div>
 
 		<!-- Project section Navigator -->
-		<div class="navigator">
-			<div class="project-links project-links-selected">Overview</div>
-			<div class="project-links">Solution</div>
-			<div class="project-links">Research</div>
-			<div class="project-links">Design</div>
-			<div class="project-links">Conclusion</div>
+		<div class="navigator" id="nav-nav">
+			<div onclick="goTo('section1')" class="project-links" id="section1-nav">Overview</div>
+			<div onclick="goTo('section2')" class="project-links" id="section2-nav">Solution</div>
+			<div onclick="goTo('section3')" class="project-links" id="section3-nav">Research</div>
+			<div onclick="goTo('section4')" class="project-links" id="section4-nav">Design</div>
+			<div onclick="goTo('section5')" class="project-links" id="section5-nav">Conclusion</div>
 		</div>
 
 		<!-- Section 1: Overview -->
@@ -218,14 +219,62 @@
 
 
 		<script type="text/javascript">
-			window.onscroll = function() {myFunction()};
 
+
+			window.onscroll = function() {myFunction()};
 			function myFunction() {
 			  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
 			  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 			  var scrolled = (winScroll / height) * 100;
 			  document.getElementById("myBar").style.width = scrolled + "%";
-			} 
+			}
+
+			var hashList = ["section1", "section2", "section3", "section4"];
+
+			window.addEventListener('scroll', ()=>{
+	            const curr = document.documentElement.scrollTop
+	            if (curr>475){
+	            	document.getElementById('nav-nav').style.position = 'fixed'
+	            	document.getElementById('nav-nav').style.top = '80px';
+	            }
+	            else{
+	            	document.getElementById('nav-nav').style.position = 'absolute'
+	            	document.getElementById('nav-nav').style.top = '555px';
+	            }
+	            const sortedHash = hashList.map(x=>(
+	                [x,curr-document.getElementById(x).offsetTop+81]
+	            )).filter(x=>x[1]>0).sort((a,b)=>(a[1]<b[1]?-1:1))
+
+	            if(sortedHash.length>0)setCurrHash(sortedHash[0][0])
+	            else setCurrHash('')
+
+        	})
+
+        	function setCurrHash(hash){
+        		var h = document.getElementsByClassName("project-links-selected")
+        		if(h.length > 0)
+        		h[0].classList.remove("project-links-selected")
+
+        		if(hash==='')return;
+
+        		var e = document.getElementById(hash+"-nav")
+        		e.classList.add("project-links-selected")
+        	}
+
+        	function goTo(hash){
+        		const pos = document.getElementById(hash).offsetTop-80
+        		window.scroll({
+				  top: pos, 
+				  left: 0, 
+				  behavior: 'smooth'
+				});
+        		console.log(hash,pos)
+        	}
+
+
+
+
+
 		</script>
 
 
