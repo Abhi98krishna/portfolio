@@ -235,6 +235,7 @@ html, body {
 	font-weight: 300;
 	font-size: 16px;
 	line-height: 150%;
+	color: var(--notblack);
 }
 
 .body-content-full {
@@ -278,10 +279,17 @@ html, body {
 .body-text-2 {
 	display: inline-block;
 	float: left;
-	height: max;
 	width: 16vw;
 	text-align: left;
 	padding-top: 250px;
+}
+
+.column-2 {
+	margin-top: 40px;
+	display: inline-block;
+	float: left;
+	width: 23vw;
+	text-align: left;
 }
 
 .blocks span {
