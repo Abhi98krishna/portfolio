@@ -1,3 +1,7 @@
+*{
+	transition-duration: 0.5s;
+}
+
 html, body {
 	margin: 0;
 	overflow-x: hidden;
@@ -159,7 +163,7 @@ html, body {
 }
 
 .navigator {
-	position: absolute;
+	position: fixed;
 	width: 11vw;
 	height: max-content;
 	top: 555px;
@@ -264,6 +268,11 @@ html, body {
 	margin-top: 50px;
 	width: 64vw;
 	height: 400px;
+	font-family: 'Fira Sans', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	color: var(--notblack);	
 }
 
 .body-text-2 {
@@ -271,17 +280,13 @@ html, body {
 	float: left;
 	height: max;
 	width: 16vw;
-	color: var(--notblack);
 	text-align: left;
-	font-family: 'Fira Sans', sans-serif;
-	font-style: normal;
-	font-weight: 300;
-	font-size: 16px;
 	padding-top: 250px;
 }
 
-.body-text-2 span {
+.blocks span {
 	font-weight: 600;
+	font-size: 17px;
 }
 
 .body-text-2:first-of-type {
