@@ -239,11 +239,8 @@
 			</div>
 		</div>	
 
-		<!--<div class="footer">	
-		</div>-->
-
 		<!-- Section 5: Conclusion -->
-		<div class="section" id="section5">
+		<div class="section" id="section5" style="margin-bottom: 0px;">
 			<div class="section-head">Conclusion</div>
 
 			<!-- Take Aways -->
@@ -261,10 +258,10 @@
 					<div class="body-text">You can view and interact with the final <a href="https://www.figma.com/proto/QDa0I0pclLlerY8RRTXf8N/Air-Crew?node-id=201%3A551&viewport=387%2C270%2C0.20166215300559998&scaling=scale-down" target="_blank">prototype here</a><br><br>To read more about the project, you can view and download the <a href="assets/icrew/icrew_documentation.pdf" target="_blank">documentation here</a></div>
 				</div>
 			</div>
-
 		</div>	
 
-
+		<div class="footer"><span style="top: 50px; position: relative;">made with <strike>❤️</strike> sweat and stress</span>
+		</div>
 
 		<script type="text/javascript">
 
@@ -281,9 +278,13 @@
 
 			window.addEventListener('scroll', ()=>{
 	            const curr = document.documentElement.scrollTop
-	            if (curr>475){
+	            if (curr>475 && curr<10160){
 	            	document.getElementById('nav-nav').style.position = 'fixed'
 	            	document.getElementById('nav-nav').style.top = '80px';
+	            }
+	            else if (curr>=10160) {
+	            	document.getElementById('nav-nav').style.position = 'absolute'
+	            	document.getElementById('nav-nav').style.top = '10240px'
 	            }
 	            else{
 	            	document.getElementById('nav-nav').style.position = 'absolute'
@@ -318,11 +319,6 @@
 				});
         		console.log(hash,pos)
         	}
-
-
-
-
-
 		</script>
 
 
