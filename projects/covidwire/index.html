@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../../style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&family=Inconsolata&family=Roboto+Slab:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+
+	</head>
+
+	<body>
+
+  		<div class="progress-container">
+   	 		<div class="progress-bar" id="myBar"></div>
+  		</div>
+
+		<!--HEAD FOR EACH PROJECT-->
+		<div class="project-head">
+			
+			<div class="nav-bar">
+				<div id="abhi-nav">abhi</div>
+				<div id="nav-link-holder">
+					<div class="nav-links nav-links-selected">projects</div>
+					<div class="nav-links">about</div>
+					<div class="nav-links">the bench</div>
+					<div class="nav-links">resume</div>
+				</div>		
+			</div>
+
+			<div class="project-info">
+				<div class="info-text">
+					<div class="project-name">Lufthansa iCrew</div>
+					<div class="project-desc">Designing a smart watch assistance to help air crew members optimize their in flight processes -- MAKE THIS A BIT BIGGER -- (How it helps the user).. maybe 3 lines cause three lines kinda looks beefy and nice</div>
+					<div class="project-tags">
+						<div class="tags">
+							<div class="tag-header">Process</div>
+							<div class="tag-text">Contextual inquiry, UX research, wireframing, UI prototyping</div>
+						</div>
+						<div class="tags">
+							<div class="tag-header">Duration</div>
+							<div class="tag-text">6 weeks 2019</div>
+						</div>
+						<div class="tags">
+							<div class="tag-header">Team</div>
+							<div class="tag-text">Abhijith Krishna<br>Beatriz Vargas</div>
+						</div>
+						<div class="tags">
+							<div class="tag-header">Tools</div>
+							<div class="tag-text">Figma</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="project-head-image"><img src="./assets/cw1.png" width="250px" height="auto"><img src="./assets/cw2.png" width="250px" height="auto"></div>
+			</div>
+		</div>
+
+		<!-- Project section Navigator -->
+		<div class="navigator" id="nav-nav">
+			<div onclick="goTo('section1')" class="project-links" id="section1-nav">Overview</div>
+			<div onclick="goTo('section2')" class="project-links" id="section2-nav">Solution</div>
+			<div onclick="goTo('section3')" class="project-links" id="section3-nav">Research</div>
+			<div onclick="goTo('section4')" class="project-links" id="section4-nav">Design</div>
+			<div onclick="goTo('section5')" class="project-links" id="section5-nav">Conclusion</div>
+		</div>
+
+		<!-- Section 1: Overview -->
+		<div class="section" id="section1">
+			<div class="section-head">Overview</div>
+
+			<!---CONTEXT-->
+			<div class="body">
+				<div class="body-title">CONTEXT</div>
+				<div class="body-content">
+					<div class="body-text">Working as a cabin crew member implies expending a lot of energy and following strict protocols. Over the course of a flight trip, they have to maintain efficiency in long hours of service on flights, adjust to ever-changing time-zones, and repeat this, sometimes, with very little time between journeys. <span class="bold-text">Cabin crew members</span>, being working tourists, <span class="bold-text">have long been ignored in the development of their work environment</span>, something that has not changed in a long time. In order to aid them in their jobs, we have envisioned a smartwatch based technology that each member uses throughout the flight.</div>
+				</div>
+			</div>
+
+			<!---CHALLENGE-->
+			<div class="body">
+				<div class="body-title">CHALLENGE</div>
+				<div class="body-content">
+					<div class="body-text"><span class="bold-text" style="font-size: 20px">HOW MIGHT WE USE EXISTING TECHNOLOGY TO IMPROVE COMMUNICATIONS BETWEEN CABIN CREW AND INCREASE EFFICIENCY OF CABIN OPERATIONS?</span></div>
+				</div>
+			</div>
+
+			<!---SOLUTION-->
+			<div class="body">
+				<div class="body-title">SOLUTION</div>
+				<div class="body-content">
+					<div class="body-text">iCrew is a <span class="bold-text">smartwatch application</span> envisioned for cabin crew members of Lufthansa. The application aids them throughout the timeline of the flight, by <span class="bold-text">improving interactions</span> between cabin crew members and <span class="bold-text">reducing communication time</span>; acting as an <span class="bold-text">organizing assistant</span> to make the process of food service and luggage onboarding faster and hassle free; providing a system of co-ordinated breaks; all put together and automatically prompted from a dynamic flight timeline.</div>
+				</div>
+			</div>
+
+			<!---ASSUMPTIONS-->
+			<div class="body">
+				<div class="body-title">ASSUMPTIONS</div>
+				<div class="body-content">
+					<div class="body-text">This product is placed along with a few speculated products, which could be instalments in flights. This involves all flight equipment to be connected over <span class="bold-text">IoT</span>, giving a constant feedback of status; <span class="bold-text">sensors</span>, attached to the seatbelts to know if they are buckled or unbuckled; sensors, installed within the overhead luggage compartment to know how much space is left in the compartment; A <span class="bold-text">local GPS</span> that tracks the position of the watch within the flight.</div>
+				</div>
+			</div>
+
+			<div class="body">
+				<div class="body-title">FEATURED</div>
+				<div class="body-content">
+					<img src="assets/featured.png" width="100%">
+				</div>	
+			</div>	
+
+			<!-- User Journey -->
+			<div class="body">
+				<div class="body-title">USER JOURNEY</div>
+				<div class="body-content">
+					<div class="body-text">To build empathy with our users, we worked with them to understand and map out the moods and emotions they go through doing the tasks assigned to them during a flight</div>
+					<img src="assets/guide.png" style="width: inherit; margin-top: 60px;">
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="footer"><span style="top: 50px; position: relative;">made with <strike>💛</strike> sweat</span>
+		</div>
+
+
+		<script type="text/javascript">
+
+
+			window.onscroll = function() {myFunction()};
+			function myFunction() {
+			  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+			  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+			  var scrolled = (winScroll / height) * 100;
+			  document.getElementById("myBar").style.width = scrolled + "%";
+			}
+
+			var hashList = ["section1", "section2", "section3", "section4"];
+
+			window.addEventListener('scroll', ()=>{
+	            const curr = document.documentElement.scrollTop
+	            if (curr>475 && curr<10160){
+	            	document.getElementById('nav-nav').style.position = 'fixed'
+	            	document.getElementById('nav-nav').style.top = '80px';
+	            }
+	            else if (curr>=10160) {
+	            	document.getElementById('nav-nav').style.position = 'absolute'
+	            	document.getElementById('nav-nav').style.top = '10240px'
+	            }
+	            else{
+	            	document.getElementById('nav-nav').style.position = 'absolute'
+	            	document.getElementById('nav-nav').style.top = '555px';
+	            }
+	            const sortedHash = hashList.map(x=>(
+	                [x,curr-document.getElementById(x).offsetTop+81]
+	            )).filter(x=>x[1]>0).sort((a,b)=>(a[1]<b[1]?-1:1))
+
+	            if(sortedHash.length>0)setCurrHash(sortedHash[0][0])
+	            else setCurrHash('')
+	            	
+        	})
+
+        	function setCurrHash(hash){
+        		var h = document.getElementsByClassName("project-links-selected")
+        		if(h.length > 0)
+        		h[0].classList.remove("project-links-selected")
+
+        		if(hash==='')return;
+
+        		var e = document.getElementById(hash+"-nav")
+        		e.classList.add("project-links-selected")
+        	}
+
+        	function goTo(hash){
+        		const pos = document.getElementById(hash).offsetTop-80
+        		window.scroll({
+				  top: pos, 
+				  left: 0, 
+				  behavior: 'smooth'
+				});
+        		console.log(hash,pos)
+        	}
+		</script>
+
+
+
+	</body>
+
+</html>

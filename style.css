@@ -35,7 +35,7 @@ html, body {
 
 .project-head {
 	width: 100vw;
-	height: 475px;
+	height: 63vh;
 	background-image: url("assets/project_head.jpg");
 	background-size: 100vw 475px;
 	margin-bottom: 80px;
@@ -117,7 +117,7 @@ html, body {
 .project-head-image {
 	display: inline-block;
 	float: right;
-	margin-right: 26vw;
+	margin-right: 15vw;
 	margin-top: -20px;
 }
 
@@ -237,7 +237,7 @@ html, body {
 	margin-right: 0px;
 	width: 50vw;
 	font-family: 'Fira Sans', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 16px;
 	line-height: 150%;
 	color: var(--notblack);

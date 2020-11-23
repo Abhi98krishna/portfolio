@@ -3,315 +3,65 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="./style.css">
+		<link rel="stylesheet" href="./style2.css">
 		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&family=Inconsolata&family=Roboto+Slab:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-
-
+		<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap" rel="stylesheet">
 	</head>
 
 	<body>
+		<div class="main-screen">
 
-  		<div class="progress-container">
-   	 		<div class="progress-bar" id="myBar"></div>
-  		</div>
-
-		<!--HEAD FOR EACH PROJECT-->
-		<div class="project-head">
-			
 			<div class="nav-bar">
 				<div id="abhi-nav">abhi</div>
 				<div id="nav-link-holder">
-					<div class="nav-links nav-links-selected">projects</div>
+					<div class="nav-links" onclick="goTo('ps1')">projects</div>
 					<div class="nav-links">about</div>
 					<div class="nav-links">the bench</div>
-					<div class="nav-links">resume</div>
+					<div class="nav-links"><a href="assets/resume.pdf" target="_blank">resume</a></div>
 				</div>		
 			</div>
 
-			<div class="project-info">
-				<div class="info-text">
-					<div class="project-name">Lufthansa iCrew</div>
-					<div class="project-desc">Designing a smart watch assistance to help air crew members optimize their in flight processes -- MAKE THIS A BIT BIGGER -- (How it helps the user).. maybe 3 lines cause three lines kinda looks beefy and nice</div>
-					<div class="project-tags">
-						<div class="tags">
-							<div class="tag-header">Process</div>
-							<div class="tag-text">Contextual inquiry, UX research, wireframing, UI prototyping</div>
-						</div>
-						<div class="tags">
-							<div class="tag-header">Duration</div>
-							<div class="tag-text">6 weeks 2019</div>
-						</div>
-						<div class="tags">
-							<div class="tag-header">Team</div>
-							<div class="tag-text">Abhijith Krishna<br>Beatriz Vargas</div>
-						</div>
-						<div class="tags">
-							<div class="tag-header">Tools</div>
-							<div class="tag-text">Figma</div>
-						</div>
-						
-					</div>
-				</div>
-				<div class="project-head-image"><img src="assets/icrew/header.png" width="340px" height="auto"></div>
-			</div></div>
-
-		<!-- Project section Navigator -->
-		<div class="navigator" id="nav-nav">
-			<div onclick="goTo('section1')" class="project-links" id="section1-nav">Overview</div>
-			<div onclick="goTo('section2')" class="project-links" id="section2-nav">Solution</div>
-			<div onclick="goTo('section3')" class="project-links" id="section3-nav">Research</div>
-			<div onclick="goTo('section4')" class="project-links" id="section4-nav">Design</div>
-			<div onclick="goTo('section5')" class="project-links" id="section5-nav">Conclusion</div>
-		</div>
-
-		<!-- Section 1: Overview -->
-		<div class="section" id="section1">
-			<div class="section-head">Overview</div>
-
-			<!---CONTEXT-->
-			<div class="body">
-				<div class="body-title">CONTEXT</div>
-				<div class="body-content">
-					<div class="body-text">Working as a cabin crew member implies expending a lot of energy and following strict protocols. Over the course of a flight trip, they have to maintain efficiency in long hours of service on flights, adjust to ever-changing time-zones, and repeat this, sometimes, with very little time between journeys. <span class="bold-text">Cabin crew members</span>, being working tourists, <span class="bold-text">have long been ignored in the development of their work environment</span>, something that has not changed in a long time. In order to aid them in their jobs, we have envisioned a smartwatch based technology that each member uses throughout the flight.</div>
-				</div>
+			<div class="main-holder">	
+				<div class="title"><img src="assets/emoji.png" style="height: 36px">&nbsp; Hey there, I’m <span class="name">Abhijith</span></div>
+				<div class="mytext">I’m a final year student passionate about designing products <br>that create experiences which are <span class="change"></span>.</div>
+					<div style="font-family: Fira Sans; font-weight: 400; font-size: 16px; margin-top: 60px">I enjoy thinking systematically and creating experiences that last beyond just screens.<br> I'm Product oriented and research driven with a motivation to create solutions that<br> add tangible value to people and organisations <br><br> Previously, a Product Design intern at <a href="https://sprinklr.design/" style="color: blue; font-weight: bold">Sprinklr</a>, and looking for full time roles</div>
 			</div>
 
-			<!---CHALLENGE-->
-			<div class="body">
-				<div class="body-title">CHALLENGE</div>
-				<div class="body-content">
-					<div class="body-text"><span class="bold-text" style="font-size: 20px">HOW MIGHT WE USE EXISTING TECHNOLOGY TO IMPROVE COMMUNICATIONS BETWEEN CABIN CREW AND INCREASE EFFICIENCY OF CABIN OPERATIONS?</span></div>
-				</div>
-			</div>
-
-			<!---SOLUTION-->
-			<div class="body">
-				<div class="body-title">SOLUTION</div>
-				<div class="body-content">
-					<div class="body-text">iCrew is a <span class="bold-text">smartwatch application</span> envisioned for cabin crew members of Lufthansa. The application aids them throughout the timeline of the flight, by <span class="bold-text">improving interactions</span> between cabin crew members and <span class="bold-text">reducing communication time</span>; acting as an <span class="bold-text">organizing assistant</span> to make the process of food service and luggage onboarding faster and hassle free; providing a system of co-ordinated breaks; all put together and automatically prompted from a dynamic flight timeline.</div>
-				</div>
-			</div>
-
-			<!---ASSUMPTIONS-->
-			<div class="body">
-				<div class="body-title">ASSUMPTIONS</div>
-				<div class="body-content">
-					<div class="body-text">This product is placed along with a few speculated products, which could be instalments in flights. This involves all flight equipment to be connected over <span class="bold-text">IoT</span>, giving a constant feedback of status; <span class="bold-text">sensors</span>, attached to the seatbelts to know if they are buckled or unbuckled; sensors, installed within the overhead luggage compartment to know how much space is left in the compartment; A <span class="bold-text">local GPS</span> that tracks the position of the watch within the flight.</div>
-				</div>
-			</div>
-		</div>	
-
-		<!-- Section 2: Solution -->
-		<div class="section" id="section2">
-			<div class="section-head">Solution</div>
-
-			<!--KEY FETURES-->
-			<div class="body">
-				<div class="body-title" style="display: block; width: 60vw;">KEY FEATURES</div>
-				<div class="body-content-full">
-					<div class="blocks">
-						<div class="img-two"><img src="assets/icrew/1.gif"></div>
-						<div class="body-text-2"><span>Onboarding screen</span><br><br>First time users can see an overview of the features that the application provides</div>
-						<div class="img-two"><img src="assets/icrew/2.gif"></div>
-						<div class="body-text-2"><span>Flight summary</span><br><br>Access your boarding pass and check the next flight information and time</div>
-					</div>	
-					<div class="blocks">
-						<div class="img-two"><img src="assets/icrew/3.gif"></div>
-						<div class="body-text-2"><span>Overhead Luggage</span><br><br>See which overhead luggage compartment still has space for another passenger's bag</div>
-						<div class="img-two"><img src="assets/icrew/4.gif"></div>
-						<div class="body-text-2"><span>Meal service</span><br><br>Choose the aisle you are serving and get the right number of meals to carry based on passenger data</div>
-					</div>
-					<div class="blocks">	
-						<div class="img-two"><img src="assets/icrew/5.gif"></div>
-						<div class="body-text-2"><span>Drinks service</span><br><br>Out of wine? Remotely request a new bottle from a crewmate while you continue to serve</div>
-						<div class="img-two"><img src="assets/icrew/6.gif"></div>	
-						<div class="body-text-2"><span>Breaks</span><br><br>Rest the right way. Choose your break slot and get all passenger calls diverted while at it </div>
-					</div>
-					<div class="blocks">
-						<div class="img-two"><img src="assets/icrew/7.gif"></div>
-						<div class="body-text-2"><span>Messages and Emergency</span><br><br>Swipe from top for notifications from the pilot. Long press to quickly call for help</div>
-						<div class="img-two"><img src="assets/icrew/8.gif"></div>
-						<div class="body-text-2"><span>Landing</span><br><br>Check the destination and current local time. See you next time.</div>
-					</div>
-					<div class="blocks" id="timelinexx" style="height: max-content; margin-top: 60px;"><span>Live flight Timeline</span><br><br>The features show up on the below timeline, which acts as a substitue for the home screen. As per the flight schedule, the watch shows the current status, time of flight remaining, and the tasks can be accessed from this timeline
-					<img src="assets/icrew/timeline.png" style="width: 62.5vw; margin-top: 40px;">	
-					</div>
-				</div>
+			<div onclick="goTo('ps1')" class="godown">
+				<div>View my work</div>
+				<div class="animated bounce" id="vvv">⌄</div>
 			</div>
 		</div>
 
-		<!-- Section 3: Research -->
-		<div class="section" id="section3">
-			<div class="section-head">Research</div>
-
-			<!-- Building Context -->
-			<div class="body">
-				<div class="body-title">BUILDING<br>CONTEXT</div>
-				<div class="body-content">
-					<div class="body-text">This project was built as a part of an Application Design course, the brief of which was to design a travel application. After an initial brainstorming session about <span class="bold-text">technologies, contexts, users and problems</span>, we found an <span class="bold-text">untapped potential in air crew members as a user group</span> to work for, since they are one of the stakeholders in the travel industry for whom there hasn't been much development in terms of new services and products</div>
+		<a href="projects/covidwire/index.html"><div class="project-screen" id="ps1">
+			<div class="project-main">
+				<div class="project-text">
+					<div class="project-subtitle">Covid 19 community project</div>
+					<div class="project-title">CovidWire</div>
+					<div class="project-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla, felis sit amet porta scelerisque, quam tortor laoreet turpis, in molestie dui ante sit amet sapien. Sed tellus sem, sagittis non quam non, fringilla sagittis nulla. Vestibulum vehicula tellus a feugiat maximus. </div>
+					<div class="learn-link">Learn more ></div>
 				</div>
-			</div>
-
-			<!-- AFFINITY MAPPING -->
-			<div class="body">
-				<div class="body-title">AFFINITY<br>MAPPING</div>
-				<div class="body-content">
-					<div class="body-text">To have a holistic understanding of the air crew's routine, we started by writitng and <span class="bold-text">mapping every aspect of experience</span> related to their work, based on secondary research</div>
-					<img src="assets/icrew/affinity.png" style="width: inherit; margin-top: 80px;">
+				<div class="project-image">
+					<img src="assets/cw1.png" style="display: inline-block;float: right;width: 200px;">
+					<img src="assets/cw2.png" style="display: inline-block;float: right;width: 200px;">
 				</div>
-			</div>
-
-			<!-- Interviews -->
-			<div class="body">
-				<div class="body-title">INTERVIEWS</div>
-				<div class="body-content">
-					<div class="body-text">We conducted a few interviews with pilots and flight attendants to both validate our secondary research and to gain new informationa and insights</div>
-					<div class="column-2"><span style="font-weight: 600; font-size: 17px;">Pilot</span><br><br> - Pilots sleep during long overhaul flights<br> - Last drink policy 12h before flight<br> - Pilots/cabin crew use a “bidding system” to decide what flights they get. Bid with priority, and seniority means better flights. Every airline has a different bidding system<br> - Fatigue is a big issue<br> - Cabin crew are unlicensed, so they don’t have legal responsibilities<br> - Pilots and especially cabin crew have specific appearance/makeup codes</div>
-					<div class="column-2" style="float: right;"><span style="font-weight: 600; font-size: 17px;">Flight Assistant</span><br><br> - 24h layovers<br> - Resting time<br> - Not a lot of “free” time<br> - System for bidding<br> - Health issues related to stress<br> - Pilots and flight attendants have different rules<br> - Looking for recommendations<br> - No apps known for flight attendant</div>
-
+			</div></a>
+			<a href="projects/icrew/index.html"><div class="project-main">
+				<div class="project-text">
+					<div class="project-subtitle">Smartwatch application</div>
+					<div class="project-title">iCrew</div>
+					<div class="project-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla, felis sit amet porta scelerisque, quam tortor laoreet turpis, in molestie dui ante sit amet sapien. Sed tellus sem, sagittis non quam non, fringilla sagittis nulla. Vestibulum vehicula tellus a feugiat maximus. </div>
+					<div class="learn-link">Learn more ></div>
 				</div>
-			</div>
-
-			<!-- User Journey -->
-			<div class="body">
-				<div class="body-title">USER JOURNEY</div>
-				<div class="body-content">
-					<div class="body-text">To build empathy with our users, we worked with them to understand and map out the moods and emotions they go through doing the tasks assigned to them during a flight</div>
+				<div class="project-image">
+					<img src="assets/icrew.png" style="display: inline-block;float: right;width: 500px; margin-right: -30px">
 				</div>
-				<img src="assets/icrew/journey.png" style="width: inherit; margin-top: 60px;">
-			</div>
-
-			<!-- Pain Points -->
-			<div class="body">
-				<div class="body-title">PAIN POINTS</div>
-				<div class="body-content">
-					<div class="body-text">We listed all the pain points and categorized them based on how actionable and pressing the pain points were<br><br><span class="bold-text">To solve</span> - luggage organisation, breaks - do not disturb, serving special meals, crew requests, pilot communications<br><br><span class="bold-text">Solvable</span> - amenity kits, passenger requests, call bell<br><br><span style="opacity: 0.5; text-decoration-style: line-through;"><s><span class="bold-text">Not solvable</span> - cleaning toilets, locating seats, passenger conflicts, boarding mix-ups </span></s></div>
-				</div>
-			</div>
+			</div></a>
 		</div>
 
-		<!-- Section 4: Design -->
-		<div class="section" id="section4">
-			<div class="section-head">Design</div>
-
-			<!-- Final Concept -->
-			<div class="body">
-				<div class="body-title">FINAL CONCEPT</div>
-				<div class="body-content">
-					<div class="body-text"><span class="bold-text" style="font-size: 20px">Design a smartwatch application powered by data from a flight, to aid cabin crew members to serve passengers in the best way possible</span></div>
-				</div>
-			</div>
-
-			<!-- Information Architecture -->
-			<div class="body">
-				<div class="body-title">INFORMATION<br>ARCHITECTURE</div>
-				<div class="body-content">
-					<div class="body-text">As explained in the <span style="color: blue; text-decoration-line: underline; opacity: 0.89" onclick="goTo('timelinexx')">key features section</span>, the app design does not consist of a home screen with menu options. Rather, it opens to a live timeline of the flight, which begins as the flight begins, and options for the different feates show up as per schedule. Hence <span class="bold-text">all tasks begin and end back at the timeline.</span> Features like emergency help and crew messages can be accessed by a long press and swiping from top respectively<br><br>The architecture went through multiple iterations to make sure that the number of options available to the crew were minimum, and so that <span class="bold-text">each interaction end-to-end would take a maximum of 5 seconds</span></div>
-					<img src="assets/icrew/architecture.png" style="width: inherit; margin-top: 60px;">
-				</div>
-			</div>
-
-			<!-- Wireframes -->
-			<div class="body">
-				<div class="body-title">WIREFRAMES</div>
-				<div class="body-content">
-					<div class="body-text">Based on the information architecture and the content needs for each screen, we tried drawing up wireframes, giving it its first look</div>
-				</div>
-				<img src="assets/icrew/wireframes.png" style="width: inherit; margin-top: 40px;">
-			</div>
-
-			<!-- Atoms & Molecules -->
-			<div class="body">
-				<div class="body-title">ATOMS AND <br>MOLECULES</div>
-				<div class="body-content">
-					<div class="body-text">These are the chosen and designed style components that build up the application and give it a consistent look and feel.</div>
-					<img src="assets/icrew/atoms.png" style="width: inherit; margin-top: 40px;">
-				</div>
-			</div>
-
-			<!-- Look and feel -->
-			<div class="body">
-				<div class="body-title">LOOK & FEEL</div>
-				<div class="body-content">
-					<div class="body-text">The components were put together with the content and information structure. Below is the look and feel of the application.</div>
-				</div>
-				<img src="assets/icrew/feel.png" style="width: inherit; margin-top: 40px;">
-			</div>
-		</div>	
-
-		<!-- Section 5: Conclusion -->
-		<div class="section" id="section5" style="margin-bottom: 0px;">
-			<div class="section-head">Conclusion</div>
-
-			<!-- Take Aways -->
-			<div class="body">
-				<div class="body-title">TAKE AWAYS</div>
-				<div class="body-content">
-					<div class="body-text">This project was a great opportunity to work with a user group I would've otherwise not interacted with. The project made us think about and uncover real needs that air crew members face and design delightful experiences for a product that would add immense value to their everyday work. The challenge of designing for an interface like a smartwatch was quite stimulating, and pushed me to learn the theories of WatchOS design systems and take it to implementation.</div>
-				</div>
-			</div>
-
-			<!-- Further Links -->
-			<div class="body">
-				<div class="body-title">FURTHER<br>LINKS</div>
-				<div class="body-content">
-					<div class="body-text">You can view and interact with the final <a href="https://www.figma.com/proto/QDa0I0pclLlerY8RRTXf8N/Air-Crew?node-id=201%3A551&viewport=387%2C270%2C0.20166215300559998&scaling=scale-down" target="_blank">prototype here</a><br><br>To read more about the project, you can view and download the <a href="assets/icrew/icrew_documentation.pdf" target="_blank">documentation here</a></div>
-				</div>
-			</div>
-		</div>	
-
-		<div class="footer"><span style="top: 50px; position: relative;">made with <strike>❤️</strike> sweat and stress</span>
-		</div>
-
-		<script type="text/javascript">
-
-
-			window.onscroll = function() {myFunction()};
-			function myFunction() {
-			  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-			  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-			  var scrolled = (winScroll / height) * 100;
-			  document.getElementById("myBar").style.width = scrolled + "%";
-			}
-
-			var hashList = ["section1", "section2", "section3", "section4"];
-
-			window.addEventListener('scroll', ()=>{
-	            const curr = document.documentElement.scrollTop
-	            if (curr>475 && curr<10160){
-	            	document.getElementById('nav-nav').style.position = 'fixed'
-	            	document.getElementById('nav-nav').style.top = '80px';
-	            }
-	            else if (curr>=10160) {
-	            	document.getElementById('nav-nav').style.position = 'absolute'
-	            	document.getElementById('nav-nav').style.top = '10240px'
-	            }
-	            else{
-	            	document.getElementById('nav-nav').style.position = 'absolute'
-	            	document.getElementById('nav-nav').style.top = '555px';
-	            }
-	            const sortedHash = hashList.map(x=>(
-	                [x,curr-document.getElementById(x).offsetTop+81]
-	            )).filter(x=>x[1]>0).sort((a,b)=>(a[1]<b[1]?-1:1))
-
-	            if(sortedHash.length>0)setCurrHash(sortedHash[0][0])
-	            else setCurrHash('')
-
-        	})
-
-        	function setCurrHash(hash){
-        		var h = document.getElementsByClassName("project-links-selected")
-        		if(h.length > 0)
-        		h[0].classList.remove("project-links-selected")
-
-        		if(hash==='')return;
-
-        		var e = document.getElementById(hash+"-nav")
-        		e.classList.add("project-links-selected")
-        	}
-
-        	function goTo(hash){
-        		const pos = document.getElementById(hash).offsetTop-80
+		<script>
+			function goTo(hash){
+        		const pos = document.getElementById(hash).offsetTop
         		window.scroll({
 				  top: pos, 
 				  left: 0, 
@@ -319,8 +69,6 @@
 				});
         		console.log(hash,pos)
         	}
-		</script>
-
+		</script>	
 
 	</body>
-</html>
