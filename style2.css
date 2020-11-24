@@ -90,12 +90,22 @@ a:hover
 	font-weight: 300;
 	font-size: 20px;
 	color: var(--notblack);
+	width: 40vw;
 }
 
-.name {
-	text-decoration-line: underline;
-	text-decoration-color: var(--myyellow);
+
+
+.underline {
+  	background-image: linear-gradient(0deg, #F8B636 100%, #F8B636 100%);
+  	background-repeat: no-repeat;
+  	background-size: 100% 0.2em;
+  	background-position: 0 88%;
+  	transition: background-size 0.25s ease-in;
 }
+.underline:hover {
+	color: white;
+    background-size: 100% 88%;
+  }
 
 .godown {
 	width: 10vw;
@@ -169,7 +179,6 @@ a:hover
 	background-image: url("assets/mainhead.png");
 	background-size: 100vw auto;
 	background-repeat: repeat-y;
-	min-height: 1000px;
 	padding-top: 0px;
 }
 
@@ -189,31 +198,40 @@ a:hover
 	margin-left: 70px;
 	display: inline-block;
 	float: left;
-	width: 31.25vw;
+	width: 35.25vw;
 }
 
 .project-subtitle {
 	font-family: Fira Sans;
 	font-weight: 400;
-	font-size: 18px;
-	color: white;
+	font-size: 14px;
+	color: #e5e5e5;
+	letter-spacing: 1px;
 }
 
 .project-title {
-	margin-top: 25px;
+	margin-top: 10px;
 	font-family: Roboto Slab;
 	font-size: 36px;
-	letter-spacing: 10px;
+	letter-spacing: 5px;
 	color: var(--myyellow);
 }
 
 .project-body {
-	margin-top: 50px;
+	margin-top: 60px;
 	font-family: Fira Sans;
-	font-size: 16px;
+	font-size: 15px;
+	font-weight: 400;
+	color: #e0e0e0;
+}
+
+#featured {
+	margin-top: 25px;
+	color: white;
+	font-family: Fira Sans;
+	font-size: 14px;
 	font-weight: 300;
 	letter-spacing: 1px;
-	color: white;
 }
 
 .learn-link {
@@ -228,4 +246,47 @@ a:hover
 	margin-top: -20px;
 	display: inline-block;
 	float: right;
+}
+
+.picture {
+	display: inline-block;
+	float: left;
+}
+
+.my-about {
+	display: inline-block;
+	float: right;
+	text-align: left;
+	width: 35vw;
+	font-family: Fira Sans;
+	font-size: 16px;
+	color: var(--notblack);
+	font-weight: 400;
+}
+
+.bold-text {
+	color: var(--myyellow);
+	font-weight: 500;
+}
+
+.navss {
+    color: inherit;
+    text-decoration: none;
+}
+
+.navss:hover 
+{
+     color: var(--myyellow); 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+.personal {
+	color: inherit;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.personal:hover {
+	color: var(--myyellow);
 }
