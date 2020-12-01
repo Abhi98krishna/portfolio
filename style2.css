@@ -3,6 +3,7 @@ html, body {
 	margin: 0;
 	overflow-x: hidden;
 	scrollbar-width: none;
+	background-color: #fff;
 }
 
 :root {
@@ -84,13 +85,13 @@ a:hover
 }
 
 .mytext {
-	margin-top: 50px;
-	font-family: Fira Sans;
+	margin-top: 20px;
+	font-family: Roboto Slab;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 500;
 	font-size: 20px;
 	color: var(--notblack);
-	width: 40vw;
+	width: 45vw;
 }
 
 
@@ -108,14 +109,15 @@ a:hover
   }
 
 .godown {
+	position: absolute;
 	width: 10vw;
-	margin-left: 45vw;
+	left: 45vw;
 	font-family: Inconsolata;
 	font-weight: 200;
 	font-size: 16px;
 	color: var(--isitgrey);
 	text-align: center;
-	margin-top: 150px;
+	bottom: 50px;
 	transition-duration: 0.5s;
 }
 
@@ -179,7 +181,7 @@ a:hover
 	background-image: url("assets/mainhead.png");
 	background-size: 100vw auto;
 	background-repeat: repeat-y;
-	padding-top: 0px;
+	padding-top: 30px;
 }
 
 
@@ -190,9 +192,11 @@ a:hover
 	width: 81.25vw;
 	border-top: 0.5px solid white;
 	height: auto;
-	margin-top: 50px;
+	margin-top: 25px;
+	margin-bottom: 25px;
 	padding-top: 50px;
 }
+
 
 .project-text {
 	margin-left: 70px;
@@ -221,6 +225,7 @@ a:hover
 	margin-top: 60px;
 	font-family: Fira Sans;
 	font-size: 15px;
+	line-height: 140%;
 	font-weight: 400;
 	color: #e0e0e0;
 }
@@ -235,27 +240,47 @@ a:hover
 }
 
 .learn-link {
-	margin-top: 100px;
-	color: var(--myyellow);
+	margin-top: 110px;
+	height: 40px;
+	width: 120px;
+	color: var(--notblack);
+	background-color: var(--myyellow);
 	font-family: Fira Sans;
 	font-size: 14px;
+	font-weight: 500;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 100px;
+	transition-duration: 0.5s
+}
+
+.learn-link:hover {
+	font-size: 15px;
 }
 
 .project-image {
 	margin-right: 70px;
-	margin-top: -20px;
+	margin-top: 0px;
 	display: inline-block;
 	float: right;
+	transition-duration: 0.5s;
+}
+
+.project-image:a img {
+	width: 250px;
 }
 
 .picture {
-	display: inline-block;
-	float: left;
+	position: absolute;
+	top: 15vh;
+	left: 17vw;
 }
 
 .my-about {
-	display: inline-block;
+	position: absolute;
 	float: right;
+	top: 250px;
+	left: 45vw;
 	text-align: left;
 	width: 35vw;
 	font-family: Fira Sans;
