@@ -162,7 +162,7 @@ a:hover
 }
 
 .change:after {
-	content: '';
+	content: 'delightful';
 	animation: changetext 4s infinite linear;
 	-webkit-animation-name: changetext;
 	-webkit-animation-duration: 4s; 
