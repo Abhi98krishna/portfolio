@@ -161,33 +161,6 @@ a:hover
 	font-weight: bold;
 }
 
-.change:after {
-	content: 'delightful';
-	animation: changetext 4s infinite linear;
-	-webkit-animation-name: changetext;
-	-webkit-animation-duration: 4s; 
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-}
-
-@keyframes changetext {
-	0% { content: "delightful"; }
-	20% { content: "seamless"; }
-	40% { content: "valuable"; }
-	60% { content: "efficient"; }
-	80% { content: "loved"; }
-	100% { content: "delightful"; }
-}
-
-@-webkit-keyframes changetext {
-	0% { content: "delightful"; }
-	20% { content: "seamless"; }
-	40% { content: "valuable"; }
-	60% { content: "efficient"; }
-	80% { content: "loved"; }
-	100% { content: "delightful"; }
-}
-
 
 .project-screen {
 	width: 100vw;
