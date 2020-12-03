@@ -164,6 +164,7 @@ a:hover
 .change:after {
 	content: '';
 	animation: changetext 4s infinite linear;
+	-webkit-animation: changetext 4s infinite linear;
 }
 
 @keyframes changetext {
@@ -174,6 +175,7 @@ a:hover
 	80% { content: "loved"; }
 	100% { content: "delightful"; }
 }
+
 
 
 .project-screen {
