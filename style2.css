@@ -176,6 +176,14 @@ a:hover
 	100% { content: "delightful"; }
 }
 
+@-webkit-keyframes changetext {
+	0% { content: "delightful"; }
+	20% { content: "seamless"; }
+	40% { content: "valuable"; }
+	60% { content: "efficient"; }
+	80% { content: "loved"; }
+	100% { content: "delightful"; }
+}
 
 
 .project-screen {
