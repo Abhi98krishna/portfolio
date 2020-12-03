@@ -164,7 +164,10 @@ a:hover
 .change:after {
 	content: '';
 	animation: changetext 4s infinite linear;
-	-webkit-animation: changetext 4s infinite linear;
+	-webkit-animation-name: changetext;
+	-webkit-animation-duration: 4s; 
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
 }
 
 @keyframes changetext {
