@@ -163,11 +163,12 @@ a:hover
 
 
 .project-screen {
-	width: 100vw;
+	width: 102vw;
 	background-image: url("assets/mainhead.png");
-	background-size: 100vw auto;
+	background-size: 102vw auto;
 	background-repeat: repeat-y;
 	padding-top: 30px;
+	margin-left: -1px;
 }
 
 
