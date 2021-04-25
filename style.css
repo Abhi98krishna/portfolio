@@ -47,11 +47,10 @@ html, body {
 	margin-bottom: 0px;
 	width: 100vw;
 	height: 125px;
-	background-image: url("assets/project_head.jpg");
 	font-family: 'Fira Sans', sans-serif;
-	font-weight: 200;
+	font-weight: 400;
 	font-size: 14px;
-	color: var(--myyellow);
+	color: var(--notblack);
 	text-align: center;
 }
 
