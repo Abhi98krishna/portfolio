@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js" integrity="sha512-nOQuvD9nKirvxDdvQ9OMqe2dgapbPB7vYAMrzJihw5m+aNcf0dX53m6YxM4LgA9u8e9eg9QX+/+mPu8kCNpV2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="assets/fav.png" type="image/x-icon">
+        <link rel="stylesheet" href="../../style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&family=Inconsolata&family=Roboto+Slab:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+		
+	</head>
+
+    <title>Sprinklr Persona | Abhijith Krishna</title>
+
+	<body>
+
+    <div style="height: 100vh; background-image: url('assets/mainhead.png'); background-repeat: repeat-y; background-size: 102vw auto; margin-left: -1vw;">
+        
+        <div style="color: white">
+            
+            <div class="nav-bar">
+                <div id="abhi-nav"><a href="../../index.html" class="navss">abhi</a></div>
+                <div id="nav-link-holder">
+                    <div class="nav-links nav-links-selected"><a href="/#ps1" class="navss">projects</a></div>
+                    <div class="nav-links"><a href="../../about.html" class="navss">about</a></div>
+                    <div class="nav-links"><a href="../../bench.html" class="navss">the bench</a></div>
+                    <div class="nav-links"><a href="assets/resume.pdf" target="_blank" class="navss">resume</a></div>
+                </div>
+            </div>
+
+            <div class="project-info">
+                <div class="info-text">
+                    <div class="project-name">Sprinklr Persona</div>
+                    <div class="project-desc">A real time, multidimensional dynamic picture of your audiences formed by consolidating the up to date information collected from billions of interactions with your brand across all channels</div>
+                </div>
+            </div> 
+
+            <div class="project-head-image" style="margin-top: -30px; margin-right: 5vw"><img src="./assets/header.png" width="600px" height="auto"></div> 
+       </div>
+
+        <div style="position: absolute; top: 350px; left: 45px; font-family: Fira Sans; font-weight: 300; font-size: 14px">      
+            <div style="color: white"> Project is locked under an NDA. Please enter the password to access.</div>
+            <input type="password" id="pass" placeholder="Enter password"> 
+
+            <button id="butt" onclick="check()">Submit</button>
+
+
+        </div>  
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+		<script type="text/javascript">
+
+    		var md5Hash = CryptoJS.MD5("Test");
+        	console.log(md5Hash.toString());
+
+        	function check(){
+        		var pass = document.getElementById("pass").value
+        		//console.log(pass)
+
+        		var redirsalt = "abhijith"
+
+        		var valsalt = "krishna"
+
+        		var valhash = CryptoJS.MD5(pass + valsalt)
+        		valhash = valhash.toString()
+
+        		var redirhash = CryptoJS.MD5(pass + redirsalt)
+        		redirhash = redirhash.toString()
+
+        		//console.log(valhash)
+        		//console.log(redirhash)
+
+        		if (valhash=="4df405897bc8362c71525ccd240802d0"){
+        			//document.getElementById("enter").innerHTML = "Correct password"
+                    window.location = `https://abhijithkrishna.com/projects/sprinklr/sprinklr-${redirhash}.html`;
+        		}
+				else{
+					//document.getElementById("enter").innerHTML = "Wrong password"
+				}
+
+        	}
+
+
+		</script>
+
+	</body>
+
+</html>
